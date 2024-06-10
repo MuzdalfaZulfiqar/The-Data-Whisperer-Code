@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .div {
+    display: flex;
+    max-width: 507px;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  .header {
+            display: flex;
+    justify-content: space-between;
+    padding: 20px 342px;
+    background-color: #daf0cc;
+    border-bottom: 1px solid #dee2e6;
+    color: black
+        }
+        .header-1, .header-2 {
+            display: flex;
+            gap: 20px;
+        }
+        .header-account, .header-admin, .header-subscriber, .header-login, .header-signup {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #0c1013;
+            cursor: pointer;
+        }
+        .header-login{
+            background-color: #13396b;
+            border-radius: 10px;
+    color: #151515;
+    white-space: nowrap;
+    width: 52px;
+    height: 52px;
+    padding: 14px 20px
+        }
+        .header-signup{
+            background-color: #0e447a;
+            background-color: #13396b;
+            border-radius: 10px;
+    color: #f9f3f3;
+    white-space: nowrap;
+    width: 52px;
+    height: 52px;
+    padding: 14px 20px
+        }
+        .header-account:hover, .header-admin:hover, .header-subscriber:hover, .header-login:hover, .header-signup:hover {
+            text-decoration: underline;
+        }
+        div.divb{
+            width: 50%;
+    padding-left: 391px;
+    padding-top: 43px
+        }
+  .div-2b {
+    color: #171a1f;
+    width: 100%;
+    font: 700 32px/150% Epilogue, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-2b {
+      max-width: 100%;
+    }
+  }
+  .div-3b {
+    color: #9095a1;
+    align-self: start;
+    margin: 39px 0 0 12px;
+    font: 400 20px/150% Epilogue, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-3b {
+      margin-left: 10px;
+    }
+  }
+  .div-4b {
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    margin-top: 61px;
+    width: 100%;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 162.5%;
+    padding: 7px 0 1px;
+  }
+  @media (max-width: 991px) {
+    .div-4b {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-5b {
+    color: #323743;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+  }
+  @media (max-width: 991px) {
+    .div-5b {
+      max-width: 100%;
+    }
+  }
+  .div-6b {
+    border-radius: 4px;
+    background-color: #f3f4f6;
+    display: flex;
+    margin-top: 8px;
+    gap: 8px;
+    color: #bdc1ca;
+    font-weight: 400;
+    padding: 15px 16px;
+  }
+  @media (max-width: 991px) {
+    .div-6b {
+      flex-wrap: wrap;
+    }
+  }
+  .img {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 20px;
+  }
+  .div-7b {
+    font-family: Inter, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: auto 0;
+    width: 313px;
+    height: 56px;
+  }
+  @media (max-width: 991px) {
+    .div-7b {
+      max-width: 100%;
+    }
+  }
+  .div-8b {
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    margin-top: 58px;
+    width: 100%;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 162.5%;
+    padding: 7px 0 1px;
+  }
+  @media (max-width: 991px) {
+    .div-8b {
+      max-width: 100%;
+      margin-top: 40px;
+    }
+  }
+  .div-9b {
+    color: #323743;
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+  }
+  @media (max-width: 991px) {
+    .div-9b {
+      max-width: 100%;
+    }
+  }
+  .div-10b {
+    border-radius: 4px;
+    background-color: #f3f4f6;
+    display: flex;
+    margin-top: 8px;
+    width: 96%;
+    gap: 20px;
+    color: #bdc1ca;
+    font-weight: 400;
+    justify-content: space-between;
+    padding: 16px;
+  }
+  @media (max-width: 991px) {
+    .div-10b {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+  .div-11b {
+    display: flex;
+    gap: 8px;
+  }
+  .div-12b {
+    font-family: Inter, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+    width: 572px;
+    height: 44px
+  }
+  .div-13b {
+    color: #ca5520;
+    align-self: start;
+    margin: 58px 0 0 56px;
+    font: 400 14px/22px Inter, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-13b {
+      margin: 40px 0 0 10px;
+    }
+  }
+  .div-14b {
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #284088;
+    margin-top: 50px;
+    width: 84%;
+    color: #fff;
+    padding: 17px 60px;
+    font: 400 16px/162.5% Inter, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-14b {
+      max-width: 100%;
+      margin-top: 40px;
+      padding: 0 20px;
+    }
+  }
+  .div-15b {
+    color: #6f7787;
+    text-align: center;
+    text-transform: uppercase;
+    align-self: center;
+    margin-top: 44px;
+    font: 700 12px/167% Inter, sans-serif;
+  }
+  @media (max-width: 991px) {
+    .div-15b {
+      margin-top: 40px;
+    }
+  }
+  .div-16b {
+    align-self: center;
+    display: flex;
+    margin-top: 61px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  @media (max-width: 991px) {
+    .div-16b {
+      margin-top: 40px;
+    }
+  }
+  .img-2 {
+    aspect-ratio: 1.14;
+    object-fit: auto;
+    object-position: center;
+    width: 83px;
+  }
+  .img-3 {
+    aspect-ratio: 1.33;
+    object-fit: auto;
+    object-position: center;
+    width: 97px;
+  }
+        .main{
+            background-color: #daf0cc;
+          display: flex;
+          flex-direction: column;
+          padding: 52px 9px 0 0;
+        }
+        .div-13 {
+          font-family: Inter, sans-serif;
+          margin-top: 28px;
+        }
+        .div-14f {
+          background-color: #151515;
+          display: flex;
+          margin-top: 481px;
+          align-items: center;
+          justify-content: center;
+          padding: 32px 60px;
+        }
+        @media (max-width: 991px) {
+          .div-14f {
+            max-width: 100%;
+            margin-top: 40px;
+            padding: 0 20px;
+          }
+        }
+        .div-15f {
+          display: flex;
+          width: 1554px;
+          max-width: 100%;
+          flex-direction: column;
+        }
+        .div-16f {
+          display: flex;
+          align-items: start;
+          gap: 20px;
+        }
+        @media (max-width: 991px) {
+          .div-16f {
+            max-width: 100%;
+            flex-wrap: wrap;
+            padding-right: 20px;
+          }
+        }
+        .div-17f {
+          align-self: end;
+          display: flex;
+          margin-top: 97px;
+          flex-direction: column;
+          font-weight: 400;
+        }
+        @media (max-width: 991px) {
+          .div-17f {
+            max-width: 100%;
+            margin-top: 40px;
+          }
+        }
+        .div-18f {
+          color: #fff;
+          letter-spacing: -4px;
+          font: 52px/60px BIZ UDPGothic, sans-serif;
+        }
+        @media (max-width: 991px) {
+          .div-18f {
+            max-width: 100%;
+            font-size: 40px;
+            line-height: 51px;
+          }
+        }
+        .div-19f {
+          display: flex;
+          width: 490px;
+          max-width: 100%;
+          gap: 0px;
+          font-size: 18px;
+          line-height: 133%;
+          margin: 44px 0 0 42px;
+        }
+        @media (max-width: 991px) {
+          .div-19f {
+            flex-wrap: wrap;
+            margin-top: 40px;
+          }
+        }
+        .div-20f {
+          font-family: BIZ UDPGothic, sans-serif;
+          justify-content: center;
+          align-items: start;
+          background-color: #fff;
+          color: #151515;
+          flex-grow: 1;
+          width: fit-content;
+          padding: 14px 16px;
+        }
+        @media (max-width: 991px) {
+          .div-20f {
+            padding-right: 20px;
+          }
+        }
+        .div-21f {
+          font-family: BIZ UDPGothic, sans-serif;
+          justify-content: center;
+          border-color: rgba(255, 255, 255, 1);
+          border-style: solid;
+          border-width: 1px;
+          background-color: #151515;
+          color: #fff;
+          white-space: nowrap;
+          text-align: center;
+          padding: 14px 20px;
+        }
+        @media (max-width: 991px) {
+          .div-21f {
+            white-space: initial;
+          }
+        }
+        .div-22f {
+          display: flex;
+          flex-direction: column;
+          color: #fff;
+          white-space: nowrap;
+        }
+        @media (max-width: 991px) {
+          .div-22f {
+            white-space: initial;
+          }
+        }
+        .div-23f {
+          font: 700 20px/140% Allan, sans-serif;
+        }
+        .div-24f {
+          margin-top: 24px;
+          font: 400 18px/144% BIZ UDPGothic, -apple-system, Roboto, Helvetica,
+            sans-serif;
+        }
+        .div-25f {
+          display: flex;
+          flex-direction: column;
+          font-size: 18px;
+          color: #fff;
+          font-weight: 400;
+          line-height: 144%;
+        }
+        .div-26f {
+          font-family: BIZ UDPGothic, sans-serif;
+        }
+        .div-27f {
+          font-family: BIZ UDPGothic, sans-serif;
+          margin-top: 24px;
+        }
+        .div-28f {
+          font-family: BIZ UDPGothic, sans-serif;
+          margin-top: 24px;
+        }
+        .div-29f {
+          font-family: BIZ UDPGothic, sans-serif;
+          margin-top: 24px;
+        }
+        .div-30f {
+          display: flex;
+          margin-top: 138px;
+          gap: 20px;
+          font-size: 18px;
+          color: #fff;
+          font-weight: 400;
+          line-height: 144%;
+        }
+        @media (max-width: 991px) {
+          .div-30f {
+            max-width: 100%;
+            flex-wrap: wrap;
+            padding-right: 20px;
+            margin-top: 40px;
+          }
+        }
+        .div-31f {
+          font-family: BIZ UDPGothic, sans-serif;
+          flex-grow: 1;
+          flex-basis: auto;
+          margin: auto 0;
+        }
+        .img-6f {
+          aspect-ratio: 6.25;
+          object-fit: auto;
+          object-position: center;
+          width: 380px;
+        }
+        .A a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="header-1">
+                <div class="header-account">My account</div>
+                <div class="header-admin">Admin</div>
+                <div class="header-subscriber">Subscriber</div>
+            </div>
+            <div class="header-2">
+                <div  class="header-login A">
+                    <a href="p5.html">Login</a>
+                    </div>
+                <div  class="header-signup A">
+                    <a href="pa4.html">Sign Up</a>
+                    </div>
+            </div>
+        </div>
+
+          <div class="divb">
+            <div class="div-2b">Welcome.</div>
+            <div class="div-3b">Create an account</div>
+            <div class="div-4b">
+              <div class="div-5b">Email</div>
+              <div class="div-6b">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/9c8bce3d0d7dea1aac7391d6beb3865e5a754bb00decc12eeae209a89ea87726?"
+                  class="img"
+                />
+                <input type="email" class="div-7b" placeholder="Enter Email">
+              </div>
+            </div>
+            <div class="div-8b">
+              <div class="div-9b">Password</div>
+              <div class="div-10b">
+                <div class="div-11b">
+                  <img
+                    loading="lazyb"
+                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/635a7b091a6e0fb918748d94e308c7250059c057d567d17c7233e1ad69c7d4e9?"
+                    class="img"
+                  />
+                  <input type="password" class="div-12b" placeholder="Enter password">
+
+                </div>
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/6e2d5e9613e874d72d8015f65fc3fd329599a83b4e729b7ef8a8a236cbcb6b65?"
+                  class="img"
+                />
+              </div>
+            </div>
+            <div class="div-13b">
+              I agree with
+              <span style="color: rgba(202, 85, 32, 1)">Terms & Conditions</span>
+            </div>
+            <div class="div-14b A">
+                <a href="p2.html">Sign Up</a>
+                </div>
+            <div class="div-15b">OR SIGN UP WITH</div>
+            <div class="div-16b">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/aabaec90a7a1eea27a8f7bcdfa1d1d7a39e3bee91bddd5ef7eb0656562131c6c?"
+                class="img-2"
+              />
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/2dfe1d22554376ca607601c2b148bbe0702ac049dcfe12dc400818433fd3a19f?"
+                class="img-3"
+              />
+            </div>
+          </div>
+<!--  -->
+        
+
+
+        <!-- footer -->
+        <div class="div-14f">
+            <div class="div-15f">
+              <div class="div-16f">
+                <div class="div-17f">
+                  <div class="div-18f">
+                    Want to learn about our
+                    <br />
+                    new data extraction services?
+                  </div>
+                  <div class="div-19f">
+                    <input type="text" class="div-20f" placeholder="Enter your email">
+                    <div class="div-21f">
+                      <a href="">Subscribe</a>
+                      </div>
+                  </div>
+                </div>
+                <div class="div-22f">
+                  <div class="div-23f">Email</div>
+                  <div class="div-24f">info@the18.design</div>
+                </div>
+                <div class="div-25f">
+                  <div class="div-26f">About us</div>
+                  <div class="div-27f">How it works</div>
+                  <div class="div-28f">Pricing</div>
+                  <div class="div-29f">FAQs</div>
+                </div>
+              </div>
+              <div class="div-30f">
+                <div class="div-31f">© The 18 Design, All rights reserved.</div>
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/ad958cfc033f7acbc8e823c5d0e26357ca5a41b079b1dad76f0c345f5df1315d?"
+                  class="img-6f"
+                />
+              </div>
+            </div>
+          </div>
+    </div>
+</body>
+</html>
